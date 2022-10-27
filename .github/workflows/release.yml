@@ -12,8 +12,7 @@ env:
 jobs:
   tagged-release:
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
+    permissions: write-all
     steps:
       - name: checkout
         uses: actions/checkout@v2
