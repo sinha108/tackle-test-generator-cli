@@ -9,12 +9,11 @@ env:
   TKLTESTUNIT_IMAGE_NAME: tkltest-unit
   TKLTESTUI_IMAGE_NAME: tkltest-ui
 
-permissions:
-  packages: write
-
 jobs:
   tagged-release:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
     steps:
       - name: checkout
         uses: actions/checkout@v2
